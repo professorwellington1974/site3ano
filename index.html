@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site da Turma</title>
+  <title>3i1 (RDC)</title>
   <style>
     body {
       margin: 0;
@@ -14,12 +14,21 @@
     }
 
     /* Banner */
-    header img {
-        min-height: 100%;
-        margin: 0;
-        padding: 0;
-     
-    }
+    header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f; /* seu fundo preto */
+  text-align: center; /* centraliza conteúdo dentro do header */
+}
+
+header img {
+  width: 100%;      /* faz a imagem ocupar toda a largura do header */
+  height: auto;     /* mantém a proporção da imagem */
+  display: block;   /* remove espaço embaixo da imagem */
+  margin: 0 auto;   /* centraliza a imagem se precisar */
+}
+
 
     /* Seção principal */
     main {
@@ -42,6 +51,14 @@
     .imagem-projeto:hover {
       transform: scale(1.05);
     }
+	
+	.legenda {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+  font-style: italic;
+}
+
 
     /* Título */
     h1 {
@@ -64,7 +81,7 @@
       color: blue;
     }
 
-    /* Rodapé azul */
+    /* Rodapé preto */
     footer {
       background: #0f0f0f;
       color: black;
@@ -213,19 +230,26 @@
     <section>
         <h2>Nossos Projetos</h2>
         <div class="projetos">
-            <div class="projeto">
-                <h3>Feira de Ciências</h3>
-                <p>Apresentamos um projeto sobre energias renováveis e suas aplicações.</p>
-            </div>
-            <div class="projeto">
-                <h3>Projeto de Robótica</h3>
-                <p>Montamos e programamos robôs usando Arduino.</p>
-            </div>
-            <div class="projeto">
-                <h3>Campanha Solidária</h3>
-                <p>Arrecadamos alimentos e roupas para doações na comunidade.</p>
-            </div>
+    <a href="https://app.sketchup.com/share/tc/northAmerica/J6f9nsVzxsM?stoken=M7uVFg4WOAWAekPB4jA1sZohAHJJySPFTAxu4IRfgB0uTyNKH8wDlm9KwGjthz92&source=web" target="_blank" style="text-decoration: none;">
+        <div class="projeto">
+            <h3>Casa inteligente</h3>
+            <p>Apresentamos uma casa inteligente no SketchUp.</p>
         </div>
+    </a>
+    <a href="https://app.sketchup.com/share/tc/northAmerica/07c7XppxC1M?stoken=je-6hy66Q2EGP9bCE9UsqLYMSXcG1MudAUEYZsI2us9jn0cEhmZmj01uC9nEpfmr&source=web" target="_blank" style="text-decoration: none;">
+        <div class="projeto">
+            <h3>Escola</h3>
+            <p>Apresentamos uma escola no SketchUp.</p>
+        </div>
+    </a>
+    <a href="https://exemplo.com/projeto3" target="_blank" style="text-decoration: none;">
+        <div class="projeto">
+            <h3>Campanha Solidária</h3>
+            <p>Arrecadamos alimentos e roupas para doações na comunidade.</p>
+        </div>
+    </a>
+</div>
+
     </section>
 
     <!-- Tabela de Matérias -->
@@ -279,6 +303,7 @@ div.mycontainer div {
 <main>
   <div>
      <img src="jordan.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	 <p class="legenda">Responsável pela configuração do WI-FI.</p>
 
     <h1>
       <a href="https://youtube.com/@jordanbmx361?si=U8ebnMn9MH_zToGC">Canal de Jordan</a>
@@ -288,6 +313,7 @@ div.mycontainer div {
   
   <div>
     <img src="analuiza.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	<p class="legenda">Responsável pela planta da Escola </p>
 
     <h1>
       <a href="https://youtube.com/@analuiza-zc6fy?si=A2Pj3pVrYydHsDyZ">Canal de Ana Luíza</a>
@@ -296,33 +322,38 @@ div.mycontainer div {
   
   <div>
     <img src="luans.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	<p class="legenda">Responsável pelo site da Turma. </p>
 
     <h1>
-      <a href="https://youtube.com/@luanrodrigues155?si=oesk78RfbNrPU6uZ">Canal de Luan Sátiro</a>
+      <a href="https://youtube.com/@luanrodrigues155?si=oesk78RfbNrPU6uZ">Canal do Luan Sátiro</a>
     </h1>
   </div>
   
   
   <div>
     <img src="davi.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	<p class="legenda">Responsável pela planta da Casa Inteligente.</p>
 
     <h1>
-      <a href="https://youtube.com/@veralucia-zs2ih?si=kzPiYCWBAVw5qwcM">Canal de Davi</a>
+      <a href="https://youtube.com/@veralucia-zs2ih?si=kzPiYCWBAVw5qwcM">Canal do Davi</a>
     </h1>
   </div>
   
   
    <div>
     <img src="pamela.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	<p class="legenda">Responsável pelo site do Projeto. </p>
 
     <h1>
-      <a href="https://www.youtube.com/@pvp_pamela">Canal da Pamela</a>
+      <a href="https://www.youtube.com/@pvp_pamela">Canal da Pâmela</a>
     </h1>
   </div>
   
   
   <div>
    <img src="peter.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+   <p class="legenda">Responsável pela configuração do WI-FI.</p>
+  
 
     <h1>
       <a href="https://www.youtube.com/@peterbatista5338/videos">Canal do Peter</a>
@@ -332,6 +363,7 @@ div.mycontainer div {
   
   <div>
    <img src="daré.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+   <p class="legenda">Responsável pela planta da Casa Inteligente.</p>
 
     <h1>
       <a href="https://www.youtube.com/@daregregorio2130">Canal do Cauã</a>
@@ -341,6 +373,7 @@ div.mycontainer div {
   
   <div>
    <img src="anna beatriz.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+   <p class="legenda">Responsável pela planta da Casa Inteligente.</p>
 
     <h1>
       <a href="https://www.youtube.com/@annabiibia">Canal da Anna</a>
@@ -350,6 +383,8 @@ div.mycontainer div {
   
   <div>
    <img src="luan.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+   <p class="legenda">Responsável pelos jogos para os servidores da 2º série.</p>
+   
     <h1>
       <a href="https://youtube.com/@lluanfodao?si=InNMLITTcUqALjgP">Canal do Luan</a>
     </h1>
@@ -365,6 +400,7 @@ div.mycontainer div {
   
    <div>
    <img src="suellen.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+   <p class="legenda">Responsável pela planta da Escola.</p>
     <h1>
       <a href="https://youtube.com/@suellencrisley3989?si=wC4EyW2evOkwKm4w">Canal da Suellen</a>
     </h1>
@@ -379,6 +415,8 @@ div.mycontainer div {
   
   <div>
    <img src="isa.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+   <p class="legenda">Responsável pelo site da Turma. </p>
+   
     <h1>
       <a href="https://www.youtube.com/@isabelacorrea-ww7ut">Canal da Isabela</a>
     </h1>
@@ -386,34 +424,102 @@ div.mycontainer div {
  
   <div>
    <img src="gustavo.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+   <p class="legenda">Responsável pela planta da Casa Inteligente.</p>
     <h1>
-      <a href="https://www.youtube.com/@gustavoalcantara-29">Canal de gustavo</a>
+      <a href="https://www.youtube.com/@gustavoalcantara-29">Canal do Gustavo</a>
     </h1>
   </div>
   
     <div>
      <img src="Felipe.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	 <p class="legenda">Responsável pelo site da Turma. </p>
+	 
     <h1>
       <a href="https://youtube.com/@pretinn_027?si=Qw935swYgySNoDV6">Canal do Felipe</a>
     </h1>
   </div>
+  
+  <div>
+     <img src="matheus.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	 <p class="legenda">Responsável pela configuração do WI-FI.</p>
+
+    <h1>
+      <a href="https://youtube.com/@matheusfaustino9197?si=yTO1FkXLkFJ8_nb2">Canal do Matheus</a>
+    </h1>
+  </div>
+  
+  <div>
+     <img src="cleidinara.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	 <p class="legenda">Responsável pelo site da Turma. </p>
+	 
+
+    <h1>
+      <a href="https://youtube.com/@nara-tf2et?si=sN5-7p3Q0NClZa9s">Canal da Cleidinara</a>
+    </h1>
+  </div>
+  
+  <div>
+     <img src="nicoli.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	 <p class="legenda">Responsável pela configuração do WI-FI.</p>
+
+    <h1>
+      <a href="https://youtube.com/@eunicollisoliver?si=WzMlgGe-DPABkqH9">Canal da Nicoli</a>
+    </h1>
+  </div>
+  
+  <div>
+     <img src="mariaeduarda.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+
+    <h1>
+      <a href="https://youtube.com/@duda_vent?si=hzSkOPvGfIcNBRzU">Canal da Maria Eduarda</a>
+    </h1>
+  </div>
+  
+    <div>
+     <img src="yasmim.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+
+    <h1>
+      <a href="https://youtube.com/@yasmimribeirocardoso2072?si=w8GT3SKZEw7PzM-a">Canal da Yasmim</a>
+    </h1>
+  </div>
+  
+   <div>
+     <img src="arthur.jpeg.jpeg" alt="imagem 1" class="imagem-projeto">
+	 <p class="legenda">Responsável pela configuração do WI-FI.</p>
+	 
+
+    <h1>
+      <a href="https://www.youtube.com/@m4rques.4">Canal do Arthur</a>
+    </h1>
+  </div>
   </main>
     </section>
-  
- 
-
-
-
-
-  
+	
 
     
 
     <!-- Botão final para outro site -->
     <section>
-        <h2>Acompanhe mais sobre a turma</h2>
-        <a href="https://www.instagram.com/suaturma" target="_blank" class="btn">Visite nosso Instagram</a>
+        <h2>Site do Projeto</h2>
+        <a href="https://professorwellington.com.br/projeto/" target="_blank" class="btn">Visite nosso site do projeto</a>
     </section>
+	
+	
+	<h2>Acompanhe mais sobre a turma</h2>
+	<a href="https://www.instagram.com/3i1_rdc?igsh=MXhja2ZsaGd0anoxMg==" target="_blank" style="display: inline-flex; align-items: center; padding: 10px 15px; background-color: #E1306C; color: white; text-decoration: none; border-radius: 5px; font-family: Arial, sans-serif;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;">
+  Siga no Instagram
+</a>
+
+<a href="https://www.tiktok.com/@3v1redes_?_t=ZM-8zS7yiEd9oT&_r=1" target="_blank" style="display: inline-flex; align-items: center; padding: 10px 15px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px; font-family: Arial, sans-serif;">
+  <img src="https://static.vecteezy.com/system/resources/previews/016/716/485/non_2x/tiktok-icon-free-png.png" alt="TikTok" style="height: 20px; width: auto; margin-right: 8px;">
+  Siga no TikTok
+</a>
+
+
+
+
+	
 
     <!-- Rodapé -->
     <footer>
