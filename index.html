@@ -17,7 +17,38 @@
       text-align: center;
       color: #333;
     }
-	
+	  
+	/* Menu de Navegação */
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1em;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+    }
 	
     /* Banner */
     header {
@@ -232,6 +263,15 @@ header img {
 </head>
 <body>
 
+	<!-- Menu de Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#materias">Matérias Estudadas</a></li>
+      <li><a href="#canais">Canais</a></li>
+      <li><a href="#site-projeto">Site do Projeto</a></li>
+    </ul>
+  </nav>
 
     <!-- Cabeçalho -->
     <header>
@@ -597,6 +637,7 @@ div.mycontainer div {
     </footer>
 
 </body>
+
 
 
 
