@@ -5,42 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="logotipo3i1RDC.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   <title>3I1RDC </title>
-	
-	<body>
-		<!-- Menu com logotipo -->
-<nav>
-  <div class="nav-container">
-    <a href="#" class="logo-link">
-      <img src="logotipo3i1RDC.png" alt="Logotipo" class="logo">
-    </a>
-    <ul class="menu">
-      <li><a href="Nossos Projetos">Projetos</a></li>
-      <li><a href="Matérias Estudadas">Matérias Estudadas</a></li>
-      <li><a href="Conheça Nossos Canais">Canais</a></li>
-      <li><a href="Site do Projeto">Site do Projeto</a></li>
-    </ul>
-  </div>
-</nav>
 
-	</body>
-	
   <style>
+    /* Aqui vai o CSS do menu com logotipo (vou repetir abaixo para facilitar) */
+  </style>
+</head>
+<body>
+
+  <!-- Aqui começa o menu -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo-link">
+        <img src="logotipo3i1RDC.png" alt="Logotipo" class="logo">
+      </a>
+      <ul class="menu">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#materias">Matérias Estudadas</a></li>
+        <li><a href="#canais">Canais</a></li>
+        <li><a href="#site-projeto">Site do Projeto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Aqui segue o resto do seu conteúdo -->
+
+</body>
+</html>
+
   
- 
-/* NOVO: Estilo do menu com logotipo */
+ /* Estilo do menu com logotipo */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .logo {
   height: 50px;
   width: auto;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: transform 0.3s ease;
 }
 
@@ -50,11 +61,6 @@
 
 .logo-link {
   display: inline-block;
-}
-
-nav {
-  background-color: #333;
-  padding: 10px 0;
 }
 
 nav ul.menu {
@@ -81,7 +87,7 @@ nav ul.menu li a:hover {
   background-color: #575757;
 }
 
-	
+
     /* Banner */
     header {
   width: 100%;
@@ -664,6 +670,7 @@ div.mycontainer div {
     </footer>
 
 </body>
+
 
 
 
